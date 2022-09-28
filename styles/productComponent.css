@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.product-container {
+    padding: 2.5rem;
+    box-shadow:  0px 0px 10px rgb(108, 108, 108);
+    border-radius: 15px;
+    text-align: left;
+}
+
+.image-container {
+    width: 40%;
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.product-title {
+    margin: 1.5rem 0;
+}
+
+.product-description {
+    width: 65%;
+}
+
+.product-price {
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+
+.comprar-ahora {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background-color: rgb(238, 188, 255);
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    box-shadow: 3px 4px 0px grey;
+}
+
+.comprar-ahora:hover {
+    color: rgb(255, 255, 255);
+    background:  rgb(165, 0, 102);
+    box-shadow: 3px 4px 0px grey;
+    animation: gradient 5s ease infinite;
+    cursor: pointer;
+}
+
+.comprar-ahora:active {
+    box-shadow: none;
+    transform: translate(3px, 4px);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-color: 100% 50%;
+    }
+    100% {
+        background-color: 0% 50%;
+    }
+}
